@@ -36,6 +36,11 @@ public class UserService {
         return userRepo.findAllUser();
     }
 
+    public User save(User u)
+    {
+        return userRepo.save(u);
+    }
+
 
 
 }

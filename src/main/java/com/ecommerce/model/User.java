@@ -20,6 +20,11 @@ public class User {
 
     }
 
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
     public User(int id, String username, String password) {
         this.id = id;
         this.username = username;
@@ -28,6 +33,11 @@ public class User {
 
     public int getId() {
         return id;
+    }
+
+    public User get()
+    {
+        return User.this;
     }
 
     public void setId(int id) {
